@@ -5,9 +5,9 @@
 .sheet-background {
     background: none;
     position: relative;
-    padding-top: 18px;
-    padding-left: 90px;
-    padding-right: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 80px;
     width: 905px;
 }
@@ -21,13 +21,10 @@
 .sheet-vampire,
 .sheet-werewolf,
 .sheet-mage,
-.sheet-promethean,
 .sheet-mage,
-.sheet-geist,
 .sheet-changeling,
 .sheet-mummy,
 .sheet-demon,
-.sheet-beast,
 .sheet-hunter,
 .sheet-settings {
     display: none !important;
@@ -37,12 +34,9 @@ input.sheet-mortalsheet:checked ~ div * .sheet-mortal,
 input.sheet-vampiresheet:checked ~ div * .sheet-vampire,
 input.sheet-werewolfsheet:checked ~ div * .sheet-werewolf,
 input.sheet-magesheet:checked ~ div * .sheet-mage,
-input.sheet-prometheansheet:checked ~ div * .sheet-promethean,
 input.sheet-changelingsheet:checked ~ div * .sheet-changeling,
-input.sheet-geistsheet:checked ~ div * .sheet-geist,
 input.sheet-mummysheet:checked ~ div * .sheet-mummy,
 input.sheet-demonsheet:checked ~ div * .sheet-demon,
-input.sheet-beastsheet:checked ~ div * .sheet-beast,
 input.sheet-huntersheet:checked ~ div * .sheet-hunter,
 input.sheet-settingssheet:checked ~ div * .sheet-settings {
     display: inline-block !important;
@@ -52,12 +46,9 @@ input.sheet-mortalsheet:checked ~ div * table.sheet-mortal,
 input.sheet-vampiresheet:checked ~ div * table.sheet-vampire,
 input.sheet-werewolfsheet:checked ~ div * table.sheet-werewolf,
 input.sheet-magesheet:checked ~ div * table.sheet-mage,
-input.sheet-prometheansheet:checked ~ div * table.sheet-promethean,
 input.sheet-changelingsheet:checked ~ div * table.sheet-changeling,
-input.sheet-geistsheet:checked ~ div * table.sheet-geist,
 input.sheet-mummysheet:checked ~ div * table.sheet-mummy,
 input.sheet-demonsheet:checked ~ div * table.sheet-demon,
-input.sheet-beastsheet:checked ~ div * table.sheet-beast,
 input.sheet-huntersheet:checked ~ div * table.sheet-hunter,
 input.sheet-settingssheet:checked ~ div * table.sheet-settings {
     display: table !important;
@@ -119,7 +110,6 @@ input.sheet-settingssheet:not(:checked) ~ input.sheet-werewolfsheet:checked ~ im
 input.sheet-settingssheet:not(:checked) ~ input.sheet-magesheet:checked ~ img.sheet-header.sheet-mage,
 input.sheet-settingssheet:not(:checked) ~ input.sheet-mummysheet:checked ~ img.sheet-header.sheet-mummy,
 input.sheet-settingssheet:not(:checked) ~ input.sheet-changelingsheet:checked ~ img.sheet-header.sheet-changeling,
-input.sheet-settingssheet:not(:checked) ~ input.sheet-geistsheet:checked ~ img.sheet-header.sheet-geist,
 input.sheet-settingssheet:not(:checked) ~ input.sheet-demonsheet:checked ~ img.sheet-header.sheet-demon,
 input.sheet-settingssheet:not(:checked) ~ input.sheet-huntersheet:checked ~ img.sheet-header.sheet-hunter
 {
@@ -216,20 +206,6 @@ input.sheet-magesheet:checked ~ div * input.sheet-weapon:checked + span + .sheet
     font-weight: bold;
 }
 
-input.sheet-prometheansheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-prometheansheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-prometheansheet:checked ~ div * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
-input.sheet-sheetoptions.sheet-prometheansheet:checked +span.sheet-attr {
-    color: #660099;
-    text-shadow: 0px 0px 10px black; 
-}
-
-input.sheet-prometheansheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #660099;
-    text-shadow: 0px 0px 10px black;
-    font-weight: bold;
-}
-
 input.sheet-changelingsheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
 input.sheet-changelingsheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
 input.sheet-changelingsheet:checked ~ div * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
@@ -240,20 +216,6 @@ input.sheet-sheetoptions.sheet-changelingsheet:checked +span.sheet-attr {
 
 input.sheet-changelingsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #AC0611;
-   text-shadow: 0px 1px 0px black;
-    font-weight: bold;
-}
-
-input.sheet-geistsheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-geistsheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-geistsheet:checked ~ div * .sheet-potency input.sheet-attr:checked ~ span.sheet-attr,
-input.sheet-sheetoptions.sheet-geistsheet:checked +span.sheet-attr {
-    color: #F4DB41;
-    text-shadow: 0px 1px 0px black;
-}
-
-input.sheet-geistsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #F4DB41;
    text-shadow: 0px 1px 0px black;
     font-weight: bold;
 }
@@ -283,23 +245,6 @@ input.sheet-sheetoptions.sheet-demonsheet:checked +span.sheet-attr {
 input.sheet-demonsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
     color: #50ACA1;
     text-shadow: 0px 1px 0px black;
-    font-weight: bold;
-}
-
-input.sheet-beastsheet:checked ~ div * input.sheet-attr:checked + span.sheet-attr,
-input.sheet-beastsheet:checked ~ span > input.sheet-attr:checked + span.sheet-attr,
-input.sheet-sheetoptions.sheet-beastsheet:checked +span.sheet-attr {
-   background-color: #666666;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-}
-
-input.sheet-beastsheet:checked ~ div * input.sheet-weapon:checked + span + .sheet-weaponstat.sheet-name {
-    color: #2A2D80;
-    text-shadow: 0px 0px 10px black;
     font-weight: bold;
 }
 
@@ -1123,10 +1068,12 @@ input[type=number] {
     text-align: center;
     border: none;
     cursor: default;
+    box-shadow: 0px 1px 0px #000;
     -moz-box-shadow: 0px 1px 0px #000;
     -webkit-box-shadow: 0px 1px 0px #000;  
-    -webkit-border-radius: 0px;
+    border-radius: 0px;
     -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
     -webkit-appearance:none;
     -moz-appearance:none;
     margin-bottom: 0px;
@@ -1245,10 +1192,12 @@ input[type=number] {
     text-align: center;
     border: none;
     cursor: default;
+    box-shadow: 0px 1px 0px #000;
     -moz-box-shadow: 0px 1px 0px #000;
     -webkit-box-shadow: 0px 1px 0px #000;  
-    -webkit-border-radius: 0px;
+    border-radius: 0px;
     -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
     -webkit-appearance:none;
     -moz-appearance:none;
     margin-bottom: 0px;
