@@ -9,7 +9,7 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 80px;
-    width: 905px;
+    width: 780px;
 }
 
 .sheet-background-image {
@@ -400,13 +400,25 @@ input.sheet-huntersheet:checked ~ div * input.sheet-weapon:checked + span + .she
     text-align: center;
 }
 
+.sheet-skills {
+    float: left;
+}
+
 .sheet-skills table {
-    width: 200px;
-    border-right: solid 1px black;
+    width: 780px;
 }
 
 .sheet-skills td {
-    line-height: 1em;   
+    line-height: 1em;
+    vertical-align: top;
+}
+
+table.sheet-skills-column {
+    width: 260px;
+}
+
+table.sheet-skills-column td:last-child {
+    text-align: right;
 }
 
 .sheet-subheader {
@@ -421,38 +433,30 @@ input.sheet-huntersheet:checked ~ div * input.sheet-weapon:checked + span + .she
     font-style: italic;
 }
 
-.sheet-skills {
-    float: left;
-
-}
-
 .sheet-otherattributes {
     float: right;
     width: 200px;
 }
 
-table.sheet-attributes .sheet-spacer:not(:nth-child(2)) {
+table.sheet-attributes .sheet-spacer {
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+
+table.sheet-attributes td:first-child:not(.sheet-subheader) {
     border-left: solid 1px black;
 }
 
-table.sheet-attributes .sheet-spacer {
+table.sheet-attributes td:last-child:not(.sheet-subheader) {
     border-right: solid 1px black;
 }
 
-table.sheet-attributes td:last-child {
-    border-right: solid 1px black;
-}
-
-.charsheet table.sheet-attributes tr:nth-child(2) td:not(.sheet-spacer):not(.sheet-category) {
+.charsheet table.sheet-attributes tr:nth-child(3) td:not(.sheet-spacer) {
     border-top: solid 1px black;
 }
 
-.charsheet table.sheet-attributes tr:last-child td:not(.sheet-spacer):not(.sheet-category) {
-   border-bottom: solid 1px black;
-}
-
-.charsheet table.sheet-attributes td.sheet-category {
-    text-align: right;
+.charsheet table.sheet-attributes tr:last-child td:not(.sheet-spacer) {
+    border-bottom: solid 1px black;
 }
 
 input.sheet-attr {
@@ -737,7 +741,7 @@ input.sheet-CorC2:checked ~ h4.sheet-CorC2
 {
     width: 189px;
     height: 100%;
-    background: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/New%20World%20of%20Darkness%20Official/roll.jpg) top left;
+    background: url(http://i.imgur.com/xBk4U1p.jpg) top left;
     background-size: 189px 100%;
     background-repeat: no-repeat;
     font-family: "Courier New", Courier, monospace;
